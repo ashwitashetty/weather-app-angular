@@ -8,7 +8,7 @@ import { WeatherAppService } from 'src/services/weatherapp.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  cityName: string = 'Udupi';
+  cityName: string = '';
   cityResults: any = [];
   active = 'active';
   date: any;
@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   }
 
   handleChange(event: string): void {
-    this.weatherAppServices.searchCitiesApi(event).subscribe((cityResults: any) => {
+    this.weatherAppServices.citiesSearchApi(event).subscribe((cityResults: any) => {
       this.cityResults = cityResults;
     });
   }

@@ -17,7 +17,7 @@ export class WeatherAppService {
 
   ngOnInit(): void {}
 
-  getWeatherApi(city: string) {
+  fetchWeatherApi(city: string) {
     return this.http.get(
       `https://weatherapi-com.p.rapidapi.com/current.json?q=${city}`,
       {
@@ -30,7 +30,7 @@ export class WeatherAppService {
     );
   }
 
-  searchCitiesApi(text: string) {
+  citiesSearchApi(text: string) {
     return this.http.get(
       `https://weatherapi-com.p.rapidapi.com/search.json?q=${text}`,
       {
@@ -44,7 +44,7 @@ export class WeatherAppService {
   }
 
   fetchWeatherData(city: string) {
-    this.getWeatherApi(city).subscribe((weatherDetails: any) => {
+    this.fetchWeatherApi(city).subscribe((weatherDetails: any) => {
       this.cityWeatherData = {
         favourite: false,
         recentSearch: true,

@@ -1,9 +1,8 @@
-.main {
+.Home-Container {
     width: 87vw;
     height: 100%;
-    /* border: 1px solid; */
   }
-  .cityName {
+  .cityNameRegion{
     color: #ffffff;
     font-size: 24px;
     font-weight: 500;
@@ -11,7 +10,7 @@
     line-height: 24px;
     text-align: left;
     margin-top: 60px;
-    font-family: Regular;
+    font-family: Roboto Regular;
   }
   .addfavdiv {
     display: flex;
@@ -25,7 +24,7 @@
   
   .addfavp {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0;
@@ -42,19 +41,19 @@
     height: 84px;
     width: 80px;
   }
-  .tempdiv {
+  .temp-section {
     display: flex;
     flex-direction: row;
     height: 100px;
   }
-  .tempdiv1 {
+  .temp-celcius-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
   }
-  .tempdiv2 {
+  .temp-celcius-section-div {
     box-sizing: border-box;
     height: 30px;
     width: 28px;
@@ -63,11 +62,11 @@
     align-items: center;
     justify-content: center;
   }
-  .tempdiv3 {
+  .temp-fahren-section-div {
     display: flex;
     flex-direction: row;
   }
-  .tempdiv4 {
+  .temp-sub-section {
     box-sizing: border-box;
     height: 30px;
     width: 28px;
@@ -79,7 +78,7 @@
   }
   .notext {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 64px;
     font-weight: 500;
     letter-spacing: 0;
@@ -87,32 +86,32 @@
     margin-right: 10px;
     text-align: center;
   }
-  .temptext1 {
+  .celcius-deg-unit {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 12px;
     margin-top: -4px;
   }
-  .temptext2 {
+  .celcius-deg-text {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 16px;
   }
-  .temptext3 {
+  .fahren-deg-unit {
     color: #e32843;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 12px;
     margin-top: -4px;
   }
-  .temptext4 {
+  .fahren-deg-text {
     color: #e32843;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 16px;
   }
   
-  .temptext5 {
+  .temp_description-content {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 26px;
     letter-spacing: 0;
     line-height: 25px;
@@ -126,13 +125,13 @@
     border: 1px solid #ffffff;
     opacity: 0.3;
   }
-  .grp {
+  .footer-container {
     display: flex;
     flex-direction: row;
     padding: 5rem 7vw;
     justify-content: space-between;
   }
-  .grpdiv {
+  .footer-container-div {
     height: 50px;
     width: 120px;
     display: flex;
@@ -162,18 +161,18 @@
     height: 20px;
     width: 34px;
   }
-  .grpdivin {
+  .footer-container-divin {
     margin-left: 10px;
   }
   
-  .grptext1 {
+  .footer-container-text1 {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 18px;
   }
-  .grptext2 {
+  .footer-container-text2 {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 22px;
     margin-top: 5px;
   }

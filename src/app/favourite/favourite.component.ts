@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FavouriteService } from 'src/services/favourite.service';
 import { HomeService } from 'src/services/home.service';
-
+import { MatDialog } from '@angular/material/dialog';
 import { WeatherAppService } from 'src/services/weatherapp.service';
+import { RemoveAllComponent } from '../remove-all/remove-all.component';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class FavouriteComponent implements OnInit {
   constructor(
     public weatherAppServices: WeatherAppService,
     public homeServices: HomeService,
-    public favouriteServices: FavouriteService
+    public favouriteServices: FavouriteService,
+    public dialog:MatDialog
   ) {}
   ngOnInit(): void {
     this.favouriteServices.getFavouriteCities();
@@ -27,11 +29,16 @@ export class FavouriteComponent implements OnInit {
     this.homeServices.refresh();
   }
 
-  clearFavouriteCities() {
-    this.favouriteServices.clearFavouriteCityList();
-  }
+  // clearFavouriteCities() {
+  //   this.favouriteServices.clearFavouriteCityList();
+  // }
 
   removeFromFavourite(cityData: any) {
     this.favouriteServices.removefromFavouriteList(cityData);
+  }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(RemoveAllComponent, {
+      width: '458px',height:'210px'
+    });
   }
 }

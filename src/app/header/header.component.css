@@ -14,7 +14,7 @@
     flex-direction: column;
   }
   
-  .webtopbar {
+  .logo-container {
     display: flex;
     flex-direction: row;
     height: 2vh;
@@ -22,24 +22,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .list-container {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    margin-top: 40px;
-    position: absolute;
-    z-index: 1;
-  }
-  .list-container-text {
-    height: max-content;
-    width: 25vw;
-    background-color: #ffffff;
-    border-radius: 4px;
-    right: 95px;
-    font-family: Regular;
-  }
-  
-  .webinputfielddiv {
+  .search-container {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -50,7 +33,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     color: #ffffff;
   }
-  .webinputfield {
+  .search-input-field {
     box-sizing: border-box;
     height: 45px;
     width: 22vw;
@@ -62,13 +45,13 @@
     letter-spacing: 0;
     line-height: 19px;
     padding-left: 10px;
-    font-family: Light;
+    font-family: Roboto Light;
     opacity: 0.8;
   }
-  .webinputfield:focus {
+  .search-input-field:focus {
     outline: none;
   }
-  .webinputfield::placeholder {
+  .search-input-field::placeholder {
     color: #ffffff;
   }
   
@@ -79,7 +62,7 @@
   
   .date-time {
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 14px;
     letter-spacing: 0;
     line-height: 16px;
@@ -92,6 +75,7 @@
     justify-content: space-between;
     color: #ffffff;
     letter-spacing: 0;
+
   }
   .navbarin {
     width: 30vw;
@@ -112,17 +96,44 @@
   .nav-labels {
     display: flex;
     color: #ffffff;
-    font-family: Light;
+
     font-size: 16px;
     letter-spacing: 0;
     height: 25px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    font-family: Light;
+    font-family:Roboto Light;
   }
   .active {
     color: #ffd639;
     border-bottom: #ffd639 solid 2px;
   }
-  
+  .cities-div-web {
+    position: absolute;
+    width: 25%;
+    border-radius: 7px;
+    text-align: center;
+    top: 81px;
+    right: 136px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    animation: search 0.5s ease forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .cities-div-web p {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 1.4rem;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .cities-div-web p:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 7px;
+  }

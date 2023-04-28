@@ -18,7 +18,7 @@
     line-height: 21px;
     text-align: center;
     margin-top: 20px;
-    font-family: Regular;
+  font-family: Roboto Regular;
   }
   
   .favtopbar {
@@ -29,7 +29,7 @@
     align-items: center;
     padding: 0 1vw;
     color: #ffffff;
-    font-family: Regular;
+    font-family: Roboto Regular;
     font-size: 18px;
   }
   
@@ -70,7 +70,7 @@
     color: #ffffff;
     font-size: 16px;
     font-weight: 500;
-    font-family: Medium;
+    font-family: Roboto Regular;
   
     width: 15vw;
   }
@@ -78,7 +78,7 @@
     color: #ffffff;
     font-size: 32px;
     font-weight: 500;
-    font-family: Medium;
+    font-family: Roboto Regular;
   
     width: 5vw;
     margin-left: 3vw;
@@ -86,14 +86,14 @@
   .comptext2-1 {
     color: #ffffff;
     font-size: 16px;
-    font-family: Light;
+    font-family: Roboto Light;
   }
   
   .comptext3 {
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
-    font-family: Regular;
+    font-family: Roboto Regular;
   
     display: flex;
     text-align: center;

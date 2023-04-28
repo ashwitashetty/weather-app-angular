@@ -9,6 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { RecentsearchComponent } from './recentsearch/recentsearch.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RemoveAllComponent } from './remove-all/remove-all.component';
+import { MaterialModule } from 'src/material/material.module';
+import { CommonModule } from '@angular/common';
+import { ClearAllComponent } from './clear-all/clear-all.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +21,18 @@ import { FormsModule } from '@angular/forms';
     FavouriteComponent,
     HomeComponent,
     HeaderComponent,
-    RecentsearchComponent
+    RecentsearchComponent,
+    RemoveAllComponent,
+    ClearAllComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

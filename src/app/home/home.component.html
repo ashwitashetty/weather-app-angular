@@ -1,5 +1,5 @@
-<div class="main">
-    <p class="cityName">
+<div class="Home-Container">
+    <p class="cityNameRegion">
       {{ cityweatherData?.data?.location?.name }},
       {{ cityweatherData?.data?.location?.region }}
     </p>
@@ -27,57 +27,57 @@
         class="weather_icon"
       />
   
-      <div *ngIf="temp === 'Fahreneit'" class="tempdiv">
+      <div *ngIf="temp === 'Fahreneit'" class="temp-section">
         <div class="notext">
           {{ (cityweatherData?.data?.current?.temp_f).toFixed(0) }}
         </div>
-        <div class="tempdiv1">
-          <div class="tempdiv2" (click)="convertToCelcius()">
-            <p class="temptext1">o</p>
-            <p class="temptext2">C</p>
+        <div class="temp-celcius-section">
+          <div class="temp-celcius-section-div" (click)="convertToCelcius()">
+            <p class="celcius-deg-unit">°</p>
+            <p class="celcius-deg-text">C</p>
           </div>
-          <div class="tempdiv3">
-            <div class="tempdiv4">
-              <p class="temptext3">o</p>
-              <p class="temptext4">F</p>
+          <div class="temp-fahren-section-div">
+            <div class="temp-sub-section">
+              <p class="fahren-deg-unit">°</p>
+              <p class="fahren-deg-text">F</p>
             </div>
           </div>
         </div>
       </div>
   
-      <div *ngIf="temp === 'Celcius'" class="tempdiv">
+      <div *ngIf="temp === 'Celcius'" class="temp-section">
         <div class="notext">
           {{ (cityweatherData?.data?.current?.temp_c).toFixed(0) }}
         </div>
-        <div class="tempdiv1">
-          <div class="tempdiv3">
-            <div class="tempdiv4">
-              <p class="temptext3">o</p>
-              <p class="temptext4">C</p>
+        <div class="temp-celcius-section">
+          <div class="temp-fahren-section-div">
+            <div class="temp-sub-section">
+              <p class="fahren-deg-unit">°</p>
+              <p class="fahren-deg-text">C</p>
             </div>
           </div>
-          <div class="tempdiv2" (click)="convertToFahreneit()">
-            <p class="temptext1">o</p>
-            <p class="temptext2">F</p>
+          <div class="temp-celcius-section-div" (click)="convertToFahreneit()">
+            <p class="celcius-deg-unit">°</p>
+            <p class="celcius-deg-text">F</p>
           </div>
         </div>
       </div>
   
-      <div class="temptext5">
+      <div class="temp_description-content">
         {{ cityweatherData?.data?.current?.condition?.text }}
       </div>
     </div>
     <div class="line-copy"></div>
-    <div class="grp">
-      <div class="grpdiv">
+    <div class="footer-container">
+      <div class="footer-container-div">
         <img
           src="../../../assets/images/icon_temperature_info.png"
           alt="icon_temp"
           class="icon_temp"
         />
-        <div class="grpdivin">
-          <div class="grptext1">Min - Max</div>
-          <div class="grptext2">
+        <div class="footer-container-divin">
+          <div class="footer-container-text1">Min - Max</div>
+          <div class="footer-container-text2">
             {{ cityweatherData?.data?.current?.temp_c }}°-{{
               cityweatherData?.data?.current?.temp_c
             }}°
@@ -85,57 +85,57 @@
         </div>
       </div>
   
-      <div class="grpdiv">
+      <div class="footer-container-div">
         <img
           src="../../../assets/images/icon_precipitation_info.png"
           alt="icon_prec"
           class="icon_prec"
         />
-        <div class="grpdivin">
-          <div class="grptext1">Precipitation</div>
-          <div class="grptext2">
+        <div class="footer-container-divin">
+          <div class="footer-container-text1">Precipitation</div>
+          <div class="footer-container-text2">
             {{ cityweatherData?.data?.current?.precip_mm }}%
           </div>
         </div>
       </div>
   
-      <div class="grpdiv">
+      <div class="footer-container-div">
         <img
           src="../../../assets/images/icon_humidity_info.png"
           alt="icon_humi"
           class="icon_humi"
         />
-        <div class="grpdivin">
-          <div class="grptext1">Humidity</div>
-          <div class="grptext2">
+        <div class="footer-container-divin">
+          <div class="footer-container-text1">Humidity</div>
+          <div class="footer-container-text2">
             {{ cityweatherData?.data?.current?.humidity }}%
           </div>
         </div>
       </div>
   
-      <div class="grpdiv">
+      <div class="footer-container-div">
         <img
           src="../../../assets/images/icon_wind_info.png"
           alt="icon_wind"
           class="icon_wind"
         />
-        <div class="grpdivin">
-          <div class="grptext1">Wind</div>
-          <div class="grptext2">
+        <div class="footer-container-divin">
+          <div class="footer-container-text1">Wind</div>
+          <div class="footer-container-text2">
             {{ cityweatherData?.data?.current?.wind_mph }}mph
           </div>
         </div>
       </div>
   
-      <div class="grpdiv">
+      <div class="footer-container-div">
         <img
           src="../../../assets/images/icon_visibility_info.png"
           alt="icon_vis"
           class="icon_vis"
         />
-        <div class="grpdivin">
-          <div class="grptext1">Visibility</div>
-          <div class="grptext2">
+        <div class="footer-container-divin">
+          <div class="footer-container-text1">Visibility</div>
+          <div class="footer-container-text2">
             {{ cityweatherData?.data?.current?.vis_miles }} mph
           </div>
         </div>
